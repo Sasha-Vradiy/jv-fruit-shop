@@ -15,6 +15,6 @@ public class Storage {
     }
 
     public static Map<String, Integer> getAllFruits() {
-        return fruits;
+        return new HashMap<>(fruits);
     }
 }
