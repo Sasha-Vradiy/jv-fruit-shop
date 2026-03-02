@@ -6,7 +6,7 @@ import core.basesyntax.strategy.OperationStrategy;
 import java.util.List;
 
 public class ShopServiceImpl implements ShopService {
-    private OperationStrategy strategy;
+    private final OperationStrategy strategy;
 
     public ShopServiceImpl(OperationStrategy strategy) {
         this.strategy = strategy;

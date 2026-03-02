@@ -27,7 +27,7 @@ public class DataConverterImpl implements DataConverter {
             }
         }
         if (operation == null) {
-            throw new RuntimeException("Unknown operation code" + operationCode);
+            throw new RuntimeException("Unknown operation code: " + operationCode);
         }
         return new FruitTransaction(operation, fruit,quantity);
     }
