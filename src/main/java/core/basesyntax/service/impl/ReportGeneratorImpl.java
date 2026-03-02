@@ -10,7 +10,7 @@ public class ReportGeneratorImpl implements ReportGenerator {
     @Override
     public String getReport() {
         StringBuilder report = new StringBuilder(HEADER);
-        for (Map.Entry<String, Integer> entry : Storage.fruits.entrySet()) {
+        for (Map.Entry<String, Integer> entry : Storage.getAllFruits().entrySet()) {
             report.append(entry.getKey())
                     .append(",")
                     .append(entry.getValue())
